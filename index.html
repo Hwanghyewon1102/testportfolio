@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hwanghyewon</title>
+
+
+  <link rel="icon" href="favicon1.ico">
+  <!-- (참고) 파비콘 만들기: https://iconifier.net -->
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="css/hhw_main.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script defer src="js/hhw_main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <a href="hww_index.html" class="logo">
+        <img src="favicon1.ico" alt="로고">
+      </a>
+
+      <nav class="font-en">
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skill">SKILL</a></li>
+          <li><a href="#project">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <a href="javascript:void(0)" class="btn-hamburger">
+        <span class="material-symbols-outlined">menu</span>
+      </a>
+    </div>
+
+      <!-- <div class="search">
+        <span class="material-symbols-outlined search-div">search</span>
+        <span class="material-symbols-outlined search-div">menu</span>
+      </div> -->
+    </div>
+  </header>
+
+
+  <section class="visual scroll-spy">
+    <div class="inner">
+      <div class="Description">
+        <div class="viimg" style="width: 500px; height: 500px; position: relative;">
+          <img img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Visual Background"
+            class="visual-img" />
+        </div>
+        <div class="vitext">
+          <span class="name font-en">
+            황혜원 
+          </span>
+          <ul>
+            <li><a href="#about" class="visabout">ABOUT</a></li>
+            <li><a href="#skill" class="visskill">SKILL</a></li>
+            <li><a href="#project" class="visproject">PROJECT</a></li>
+            <li><a href="#contact" class="viscontact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <section id="about" class="about scroll-spy">
+    <div class="inner">
+      <h2 class="title font-en">ABOUT</h2>
+      <div class="about__wrapper">
+        <div class="about__img">
+          <img
+            src="data:image/png;base64,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"
+            alt="프로필">
+        </div>
+        <div class="about__text">
+          <span class="slogan">aaaaaAAAaaaaaa</span>
+          <h4 class="data">황혜원(2003.11.02)</h4>
+          <h3 class="career">학력 및 경력</h3>
+          <ul>
+            <li>22.03 ~ 26.02 졸업</li>
+            <li>25.07 ~ 26.01 클라우드(AWS)활용 자바/스프링 개발 부트캠프 수료</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="skill" class="skill scroll-spy">
+    <div class="inner">
+      <h2 class="title font-en">SKILL</h2>
+      <div class="skill__list">
+        <div class="skill__box left top">
+          <span>JAVA</span>
+          <div class="skillimg ">
+            <img src="images/javascript-736400_1280.png" alt="">
+            <div class="skillul">
+              <ul class="sklist">
+                <li>aaaaaaaaaaaa</li>
+                <li>bbbbbbbbbbbbb</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box right top">
+          <span>Sql</span>
+          <div class="skillimg">
+            <img src="images/javascript-736400_1280.png" alt="">
+            <div class="skillul">
+              <ul class="sklist">
+                <li>aaaaaaaaaaaa</li>
+                <li>bbbbbbbbbbbbb</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box left bottom">
+          <span>HTML</span>
+          <div class="skillimg">
+            <img src="images/javascript-736400_1280.png" alt="">
+            <div class="skillul">
+              <ul class="sklist">
+                <li>aaaaaaaaaaaa</li>
+                <li>bbbbbbbbbbbbb</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="skill__box right bottom">
+          <span>JAVA</span>
+          <div class="skillimg">
+            <img src="images/javascript-736400_1280.png" alt="">
+            <div class="skillul">
+              <ul class="sklist">
+                <li>aaaaaaaaaaaa</li>
+                <li>bbbbbbbbbbbbb</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </section>
+  <!-- PROJECT -->
+  <section id="project" class="project font-en scroll-spy">
+    <div class="inner">
+      <h2 class="title">PROJECT</h2>
+      <div class="port num1">
+        <div class="port__img">
+          <!-- 슬라이드 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work_1.jpg" alt="산출물1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_2.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_3.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_4.jpg" alt="산출물2">
+              </div>
+            </div>
+
+
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="port__text">
+          <h3>프로젝트명</h3>
+          <ul>
+            <li><span>주요 기능 : </span>주요 기능 설명</li>
+            <li><span>적용 기술 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub : </span>깃허브 주소</li>
+            <li><span>URL : </span>배포 주소</li>
+          </ul>
+        </div>
+      </div>
+      <div class="port num2">
+        <div class="port__img">
+          <!-- 슬라이드 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work_2.jpg" alt="산출물1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_3.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_4.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_1.jpg" alt="산출물2">
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="port__text">
+          <h3>프로젝트명2</h3>
+          <ul>
+            <li><span>주요 기능2 : </span>주요 기능 설명</li>
+            <li><span>적용 기술2 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub2 : </span>깃허브 주소</li>
+            <li><span>URL2 : </span>배포 주소</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="port num3">
+        <div class="port__img">
+          <!-- 슬라이드 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work_3.jpg" alt="산출물1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_4.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_1.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_2.jpg" alt="산출물2">
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="port__text">
+          <h3>프로젝트명3</h3>
+          <ul>
+            <li><span>주요 기능3 : </span>주요 기능 설명</li>
+            <li><span>적용 기술3 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub3 : </span>깃허브 주소</li>
+            <li><span>URL3 : </span>배포 주소</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="port num4">
+        <div class="port__img">
+          <!-- 슬라이드 -->
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/work_4.jpg" alt="산출물1">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_1.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_2.jpg" alt="산출물2">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/work_3.jpg" alt="산출물2">
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="port__text">
+          <h3>프로젝트명 4</h3>
+          <ul>
+            <li><span>주요 기능4 : </span>주요 기능 설명</li>
+            <li><span>적용 기술4 : </span>HTML, CSS, JS, React, Java, Spring Boot</li>
+            <li><span>GitHub4 : </span>깃허브 주소</li>
+            <li><span>URL4 : </span>배포 주소</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="subport">
+        <img src="images/work_1.jpg" alt="프로젝트1" class="project1">
+        <img src="images/work_2.jpg" alt="프로젝트2" class="project2">
+        <img src="images/work_3.jpg" alt="프로젝트3" class="project3">
+        <img src="images/work_4.jpg" alt="프로젝트4" class="project4">
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact font-en scroll-spy">
+    <div class="inner">
+      <h2 class="title">CONTACT</h2>
+      <div class="info">
+        <div class="info-name">
+          <h4>황혜원</h4>
+        </div>
+        <div class="info-tel">
+          <ul>
+            <li><a href="#">github</a></li>
+            <li>010-0000-0000</li>
+            <li>asdd0000@naver.com</li>
+          </ul>
+        </div>
+        <div class="projectimg">
+          <ul>
+            <li><a href="https://www.youtube.com/"><img src="images/work_1.jpg" alt=""></a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/work_2.jpg" alt=""></a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/work_3.jpg" alt=""></a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/work_4.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="inner">
+      <p class="copyright">
+        &copy; <span class="this-year"></span>
+        <span class="font-en"> All Rights Reserved.</span>
+      </p>
+    </div>
+  </footer>
+
+  <div id="toTop">
+    <a href="#">
+      <span class="material-symbols-outlined">arrow_upward</span>
+    </a>
+  </div>
+</body>
+
+</html>
