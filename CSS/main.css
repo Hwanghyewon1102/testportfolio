@@ -717,7 +717,7 @@ footer .copyright{
 
 @keyframes moveBackground {
   0% {
-    background-position: 0 40%; 
+    background-position: 0 10%; 
   }
   70%{background-position: 0 80%; }
   80%{background-position: 0 78%; }
@@ -807,7 +807,7 @@ footer .copyright{
 
   .about {
   padding: 100px 0;
-  height: 100vh;
+  height: auto;
 }
 
 .about  .about__wrapper {
