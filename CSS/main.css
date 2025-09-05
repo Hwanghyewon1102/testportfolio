@@ -788,7 +788,9 @@ footer .copyright{
   header nav ul li a:hover {
     letter-spacing: 10px;
   }
-
+.skill{
+  background-color: #fff;
+}
 
 .visual .vitext {
   top: 50% ;
